@@ -4,11 +4,11 @@ The Indian national flag, built with pure HTML and CSS. No libraries, no depende
 ## Preview
 <img src="./preview.png" alt="Indian Flag">
 
-<center>   
+<div align="center">   
 
 [![View Live Demo](https://img.shields.io/badge/LIVE_DEMO_➜-FF671F?style=for-the-badge)](https://ladybegood.github.io/Indian-Flag/)
 
-</center>
+</div>
 
 ## Resources
 - [Wikipedia](https://en.wikipedia.org/wiki/Flag_of_India#Design) - Indian Flag Design
