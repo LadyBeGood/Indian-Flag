@@ -133,20 +133,29 @@
     </div>
 
 
-
+    
     <style>
-        /*====================================*/
-        /* VARIABLES                          */
-        /*====================================*/
-        :root {
-            /* ----- Colours ----- */
+        body {
+            height: 100svh;
+            display: grid;
+            place-items: center;
+            background: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .indian-flag {
+            /*====================================*/
+            /* COLOURS                            */
+            /*====================================*/
             --indian-saffron: #FF671F;
             --white: #fff;
             --indian-green: #046A38;
             --navy-blue: #06038D;
 
-
-            /* ----- Dimensions ----- */
+            /*====================================*/
+            /* DIMENSIONS                         */
+            /*====================================*/
             /* All the dimesions are based upon --FLAG-WIDTH, hence adjusting --FLAG-WIDTH will automatically adjust other values */
             --FLAG-WIDTH: min(600px, 90vw);
             --FLAG-HEIGHT: calc(var(--FLAG-WIDTH) / 3 * 2);
@@ -156,35 +165,11 @@
             --BEAD-SIZE: calc(var(--FLAG-HEIGHT) * 7 / 600);
             --SPOKE-HEIGHT: calc(var(--FLAG-HEIGHT) * 6 / 600);
             --SPOKE-GAP-SIZE: calc(var(--FLAG-HEIGHT) * 16 / 600); /* approximately */
-        }
-
-
-        /*====================================*/
-        /* RESET                              */
-        /*====================================*/
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            height: 100svh;
-            display: grid;
-            place-items: center;
-            background: black;
-        }
-
-
-        /*====================================*/
-        /* STYLES                             */
-        /*====================================*/
-        .indian-flag {
+            
             width: var(--FLAG-WIDTH);
             height: var(--FLAG-HEIGHT);
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
-
 
             .band-top {
                 background-color: var(--indian-saffron);
@@ -195,17 +180,16 @@
                 display: grid;
                 place-items: center;
 
-
                 .ashoka-chakra {
                     width: var(--ASHOKA-CHAKRA-SIZE);
                     height: var(--ASHOKA-CHAKRA-SIZE);
                     border-radius: 999px;
                     background: var(--white);
+                    box-sizing: border-box;
                     border: var(--ASHOKA-CHAKRA-BORDER-WIDTH) solid var(--navy-blue);
                     display: grid;
                     place-items: center;
                     position: relative;
-
 
                     .hub {
                         height: var(--ASHOKA-CHAKRA-HUB-SIZE);
@@ -220,7 +204,8 @@
                         top: 50%;
                         left: 50%;
                         transform:
-                            translate(-50%, -50%) rotate(calc(var(--i) * 15deg));
+                            translate(-50%, -50%) 
+                            rotate(calc(var(--i) * 15deg));
                         height: var(--SPOKE-HEIGHT);
                         display: grid;
                         grid-template-columns: 1fr var(--SPOKE-GAP-SIZE) 1fr;
