@@ -13,8 +13,8 @@
 </div>
 
 ## Resources
-- [Wikipedia](https://en.wikipedia.org/wiki/Flag_of_India#Design) - Indian Flag Design
+- [Wikipedia](https://en.wikipedia.org/wiki/Flag_of_India#Design) - Indian flag design.
 - [Clippy](https://bennettfeely.com/clippy/) - A simple `clip-path` visualiser and editor.
 
 ## License
-Licensed under MIT-0. See [license.md](./license.md)
+Licensed under MIT-0. See [license.md](./license.md).
